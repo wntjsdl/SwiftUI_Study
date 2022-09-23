@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E58BB1128DD57E800A7440F /* MyTextAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58BB1028DD57E800A7440F /* MyTextAlertView.swift */; };
+		3E58BB1328DD5E4600A7440F /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58BB1228DD5E4600A7440F /* WebViewModel.swift */; };
+		3E58BB1528DD76DC00A7440F /* JsAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58BB1428DD76DC00A7440F /* JsAlert.swift */; };
+		3E58BB1728DD7CCA00A7440F /* LoadingIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58BB1628DD7CCA00A7440F /* LoadingIndicatorView.swift */; };
+		3E58BB1928DD7D9B00A7440F /* LoadingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E58BB1828DD7D9B00A7440F /* LoadingScreenView.swift */; };
 		63AB1CAC27EF1FE70048F7C1 /* SwiftUI_Webview_tutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB1CAB27EF1FE70048F7C1 /* SwiftUI_Webview_tutorialApp.swift */; };
 		63AB1CAE27EF1FE70048F7C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB1CAD27EF1FE70048F7C1 /* ContentView.swift */; };
 		63AB1CB027EF1FE90048F7C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63AB1CAF27EF1FE90048F7C1 /* Assets.xcassets */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E58BB1028DD57E800A7440F /* MyTextAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextAlertView.swift; sourceTree = "<group>"; };
+		3E58BB1228DD5E4600A7440F /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		3E58BB1428DD76DC00A7440F /* JsAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsAlert.swift; sourceTree = "<group>"; };
+		3E58BB1628DD7CCA00A7440F /* LoadingIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorView.swift; sourceTree = "<group>"; };
+		3E58BB1828DD7D9B00A7440F /* LoadingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenView.swift; sourceTree = "<group>"; };
 		63AB1CA827EF1FE70048F7C1 /* SwiftUI_Webview_tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_Webview_tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AB1CAB27EF1FE70048F7C1 /* SwiftUI_Webview_tutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Webview_tutorialApp.swift; sourceTree = "<group>"; };
 		63AB1CAD27EF1FE70048F7C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,9 +67,14 @@
 				63AB1CBB27EF20E40048F7C1 /* SwiftUI-Webview-tutorial-Info.plist */,
 				63AB1CAB27EF1FE70048F7C1 /* SwiftUI_Webview_tutorialApp.swift */,
 				63AB1CAD27EF1FE70048F7C1 /* ContentView.swift */,
+				3E58BB1028DD57E800A7440F /* MyTextAlertView.swift */,
+				63AB1CB927EF20290048F7C1 /* MyWebview.swift */,
+				3E58BB1228DD5E4600A7440F /* WebViewModel.swift */,
+				3E58BB1428DD76DC00A7440F /* JsAlert.swift */,
+				3E58BB1628DD7CCA00A7440F /* LoadingIndicatorView.swift */,
+				3E58BB1828DD7D9B00A7440F /* LoadingScreenView.swift */,
 				63AB1CAF27EF1FE90048F7C1 /* Assets.xcassets */,
 				63AB1CB127EF1FE90048F7C1 /* Preview Content */,
-				63AB1CB927EF20290048F7C1 /* MyWebview.swift */,
 			);
 			path = SwiftUI_Webview_tutorial;
 			sourceTree = "<group>";
@@ -143,7 +158,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				63AB1CAE27EF1FE70048F7C1 /* ContentView.swift in Sources */,
+				3E58BB1528DD76DC00A7440F /* JsAlert.swift in Sources */,
 				63AB1CBA27EF20290048F7C1 /* MyWebview.swift in Sources */,
+				3E58BB1928DD7D9B00A7440F /* LoadingScreenView.swift in Sources */,
+				3E58BB1128DD57E800A7440F /* MyTextAlertView.swift in Sources */,
+				3E58BB1728DD7CCA00A7440F /* LoadingIndicatorView.swift in Sources */,
+				3E58BB1328DD5E4600A7440F /* WebViewModel.swift in Sources */,
 				63AB1CAC27EF1FE70048F7C1 /* SwiftUI_Webview_tutorialApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,7 +221,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -255,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
