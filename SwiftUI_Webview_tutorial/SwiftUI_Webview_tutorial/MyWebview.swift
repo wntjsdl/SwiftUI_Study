@@ -58,6 +58,7 @@ struct MyWebview: UIViewRepresentable {
         let userContentController = WKUserContentController()
         userContentController.add(self.makeCoordinator(), name: "callbackHandler")
         userContentController.add(self.makeCoordinator(), name: "powerapp_login")
+        userContentController.add(self.makeCoordinator(), name: "powerapp_logout")
         userContentController.add(self.makeCoordinator(), name: "powerapp_check_usim")
         wkWebConfig.userContentController = userContentController
         wkWebConfig.preferences = preferences
@@ -91,6 +92,11 @@ extension MyWebview.Coordinator: WKUIDelegate {
 
 // MARK: - WKNavigationDelegate 관련
 extension MyWebview.Coordinator: WKNavigationDelegate {
+
+    func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
+        let navigationPolicy = WKNavigationResponsePolicy.allow
+        decisionHandler(navigationPolicy)
+    }
 
     // 웹뷰 검색 시작 시
     func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
@@ -198,6 +204,12 @@ extension MyWebview.Coordinator: WKScriptMessageHandler {
             }
         }
         if message.name == "powerapp_login" {
+            print("JSON 데이터가 웹으로부터 옴: ", message.body)
+            if let receivedData: [String: String] = message.body as? Dictionary {
+                print("receivedData: ", receivedData)
+            }
+        }
+        if message.name == "powerapp_logout" {
             print("JSON 데이터가 웹으로부터 옴: ", message.body)
             if let receivedData: [String: String] = message.body as? Dictionary {
                 print("receivedData: ", receivedData)
